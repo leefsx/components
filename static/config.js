@@ -1,0 +1,1 @@
+module.exports = {"checkcode":"W5sEZQgR1WZeDSmLI1QwSXUgvRaLhVnY","appid":"dfdfd","appsecret":"dfdfdf","domain":"http://sitestar2.wopop.com","mch_id":"21212","wxpaykey":"1212121","homepage":"ucenter/ucenter","nav_defpages_arr":[{"id":"1","plate_id":"0","name":"首页","display":"1","ishome":"1"}]}

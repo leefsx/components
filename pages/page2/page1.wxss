@@ -1,0 +1,7 @@
+/* @import '../../plugins/title/title.wxss';
+@import '../../plugins/media/media.wxss'; */
+#layerCFE0FEB89FC466EC7A94ECAEDCB31F55{height:auto;background-image:none;background-color:transparent;background-repeat:repeat;background-position:top left;border-color:transparent;border-style:none;border-width:0rpx;border-radius:0rpx;font-size:44rpx;color:#666;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;line-height:1.4;}
+#layerDE4A4BDDEF4E30F9F7BFC3EB1C95DBF9{height:auto;background-image:none;background-color:transparent;background-repeat:repeat;background-position:top left;border-color:transparent;border-style:none;border-width:0rpx;border-radius:0rpx;font-size:42rpx;color:#666;font-weight:normal;font-style:normal;text-decoration:none;text-align:left;line-height:1.4;}
+#layer6A445EF9DA19135859602A9EEDEF7FD7{height:560rpx;text-align:left;background-image:none;background-color:transparent;background-repeat:repeat;background-position:top left;border-color:transparent;border-style:none;border-width:0rpx;border-radius:0rpx;}
+#layer6A445EF9DA19135859602A9EEDEF7FD7 .media_content image{width:750rpx;opacity:1;border-radius:0rpx;}
+page{background-image:none;background-color:transparent;background-repeat:repeat;background-position:top left;}

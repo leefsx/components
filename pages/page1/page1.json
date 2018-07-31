@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wptitle": "/components/title/title",
+    "wpmedia": "/components/media/media",
+    "wpfreelayout":"/components/freelayout/freelayout"
+  }
+}

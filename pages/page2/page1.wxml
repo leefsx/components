@@ -1,0 +1,24 @@
+<import src='../../plugins/title/title.wxml' />
+<import src='../../plugins/media/media.wxml' />
+
+<view id="scroll_container" style="background-image:none;background-color:transparent;background-repeat:repeat;background-position:top left;">
+	<view id="layerCFE0FEB89FC466EC7A94ECAEDCB31F55" class="mod_wrapper">
+		<template is="title" data="{{ ...layerCFE0FEB89FC466EC7A94ECAEDCB31F55}}"/>
+	</view>
+	<view id="layerDE4A4BDDEF4E30F9F7BFC3EB1C95DBF9" class="mod_wrapper">
+		<template is="title" data="{{ ...layerDE4A4BDDEF4E30F9F7BFC3EB1C95DBF9}}"/>
+	</view>
+	<view id="layer6A445EF9DA19135859602A9EEDEF7FD7" class="mod_wrapper">
+		<template is="media" data="{{ ...layer6A445EF9DA19135859602A9EEDEF7FD7}}"/>
+	</view>
+	<block wx:if="{{showBar}}">
+	<view style="height:{{tabs.isIphoneX?140:100}}rpx;"></view>
+	<view class="tabBar {{tabs.isIphoneX?'isIphoneX':''}}" style="color:{{tabs.color}};border-color:{{tabs.borderStyle}};background-color:{{tabs.backgroundColor}};border-top-color:{{tabs.borderTopColor}};">
+	  <view wx:for="{{tabs.list}}" wx:key="{{index}}" class="barList" style="color:{{pageid == item.pagePath ? tabs.selectedColor : tabs.color}}">
+		<view class="barList-content" bindtap="switchTab" data-tab="{{item}}" data-url="{{item.pagePath}}">
+		  <image class="icon" src="{{pageid == item.pagePath ? item.selectedIconPath : item.iconPath}}"></image>
+		  <view>{{item.text}}</view>
+		</view>
+	  </view>
+	</view></block></view>
+

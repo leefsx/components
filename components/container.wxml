@@ -1,0 +1,35 @@
+<template name="container">
+<block wx:for="{{plugins}}" wx:key="{{item.id}}">
+	<view id="{{item.id}}" class="mod_wrapper" style="{{item.globalstylestr}}">
+    <block wx:if="{{item.type=='title'}}">
+    <wptitle id="comp_{{item.id}}" param="{{item.childprop}}" layerid="{{item.id}}"></wptitle>
+    </block>
+    <block wx:elif="{{item.type=='media'}}">
+    <wpmedia id="comp_{{item.id}}" param="{{item.childprop}}" layerid="{{item.id}}"></wpmedia>
+    </block>
+    <block wx:elif="{{item.type=='freelayout'}}">
+    <wpfreelayout id="comp_{{item.id}}" param="{{item.childprop}}" layerid="{{item.id}}">
+    <template is="subcontainer" data="{{plugins:item._children,position:'absolute'}}" />
+    </wpfreelayout>
+    </block>
+	</view>
+  </block>
+  </template>
+
+<template name="subcontainer">
+<block wx:for="{{plugins}}" wx:key="{{item.id}}">
+	<view id="{{item.id}}" class="mod_wrapper" style="{{item.globalstylestr}}">
+    <block wx:if="{{item.type=='title'}}">
+    <wptitle id="comp_{{item.id}}" param="{{item.childprop}}" layerid="{{item.id}}"></wptitle>
+    </block>
+    <block wx:elif="{{item.type=='media'}}">
+    <wpmedia id="comp_{{item.id}}" param="{{item.childprop}}" layerid="{{item.id}}"></wpmedia>
+    </block>
+    <block wx:elif="{{item.type=='freelayout'}}">
+    <wpfreelayout id="comp_{{item.id}}" param="{{item.childprop}}" layerid="{{item.id}}">
+    <template is="container" data="{{plugins:item._children,position:'absolute'}}" />
+    </wpfreelayout>
+    </block>
+	</view>
+  </block>
+  </template>
